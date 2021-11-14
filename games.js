@@ -6,7 +6,10 @@ var userClickedPattern = [];
 
 var started = false;
 var level = 0;
-
+if(level>0)
+{
+    $(".buttn").css('visibility', 'hidden');
+}
 $(document).keypress(function () {
     if (!started) {
         $("#level-title").text("Level " + level);
@@ -88,4 +91,5 @@ function startOver() {
     level = 0;
     gamePattern = [];
     started = false;
+    $(".buttn").css('visibility', 'visible');
 }
