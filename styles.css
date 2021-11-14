@@ -26,6 +26,22 @@ body {
   border-radius: 20%;
 }
 
+
+.buttn {
+  margin: 25px;
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  border: 10px black;
+  border-radius:10%;
+  background-color: burlywood;
+  text-align: center;
+  align-items: center;
+  color:saddlebrown;
+  font-weight: bold;
+  font-size: medium;
+}
+
 .game-over {
   background-color: red;
   opacity: 0.8;

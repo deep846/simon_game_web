@@ -12,9 +12,21 @@ $(document).keypress(function () {
         $("#level-title").text("Level " + level);
         nextSequence();
         started = true;
+        $(".buttn").css('visibility', 'hidden');
     }
 });
+$(".buttn").click(function () {
 
+    if (!started) {
+        $("#level-title").text("Level " + level);
+        var userChosenColour = $(this).attr("id");
+        animatePress(userChosenColour);
+        nextSequence();
+        started = true;
+        $(".buttn").css('visibility', 'hidden');
+    }
+
+});
 $(".btn").click(function () {
 
     var userChosenColour = $(this).attr("id");
